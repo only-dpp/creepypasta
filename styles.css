@@ -1,0 +1,183 @@
+
+body {
+    font-family: 'Nosifer', cursive;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+header {
+    background-image: url('alegria-susto.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 300px; 
+    color: white; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    padding: 20px; 
+}
+
+header h1 {
+    font-size: 3rem; 
+    font-family: 'Creepster', cursive; 
+    text-shadow: 0px 0px 10px #ff0000; 
+}
+
+header p {
+    font-size: 1.5rem; 
+    font-family: Arial, sans-serif;
+    text-shadow: 0px 0px 5px #ff0000; 
+}
+
+
+h1, h2 {
+    font-size: 2em;
+    color: #ff0000;
+}
+
+
+p {
+    font-size: 1.5em;
+    color: #f0f0f0;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+
+p.visible {
+    opacity: 1;
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+p:hover {
+    text-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000, 0 0 45px #ff0000;
+    color: #ff4444;
+}
+
+
+button {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.5em;
+    border: 2px solid #ff0000;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff0000;
+    color: #333;
+    box-shadow: 0 0 20px #ff0000;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+body {
+    background: #1a1a1a;
+    animation: fog 5s infinite;
+    position: relative;
+}
+
+@keyframes fog {
+    0% {
+        background-color: #1a1a1a;
+    }
+    50% {
+        background-color: #333;
+    }
+    100% {
+        background-color: #1a1a1a;
+    }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+
+@keyframes moving-shadow {
+    0% {
+        box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.8);
+    }
+    100% {
+        box-shadow: 10px 10px 50px 10px rgba(0, 0, 0, 0.8);
+    }
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.photo-corner {
+    position: absolute;
+    width: 150px; 
+    height: 150px; 
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    transform: rotate(-10deg); 
+    border-radius: 10px; 
+}
+
+.photo-corner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.top-right {
+    top: 20px;
+    right: 20px;
+}
+
+.bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
