@@ -1,7 +1,6 @@
 document.getElementById('audioTrigger').addEventListener('click', function() {
     const audio = new Audio('witch-laughter-25288.mp3'); 
     audio.play();
-    alert("Você ouviu? Você nunca mais será feliz...");
 });
 
 
